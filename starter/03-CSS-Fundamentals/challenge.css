@@ -1,3 +1,9 @@
+* {
+  /* This is called a global reset */
+  margin: 0;
+  padding: 0;
+}
+
 body {
   font-family: sans-serif;
   line-height: 1.5;
@@ -7,6 +13,8 @@ body {
 
 .product {
   border: 4px solid black;
+  width: 825px;
+  margin: 50px auto;
 }
 
 .product-title {
@@ -14,6 +22,7 @@ body {
   background-color: #f7f7f7f7;
   text-align: center;
   font-size: 22px;
+  padding: 12px;
 }
 
 .price {
@@ -25,6 +34,18 @@ body {
   text-transform: uppercase;
   color: #828282;
   font-size: smaller;
+  margin-bottom: 20px;
+}
+
+.descrition {
+  margin-bottom: 12px;
+}
+
+/* This doesn't work, but adding 16px margin-top to the element below works */
+/* Can't add margin to small elements like anchors */
+/* With in-line elements, padding and margin are applied HORIZONTALLY ONLY */
+.more-info {
+  margin-bottom: 16px;
 }
 
 .more-info:link,
@@ -42,10 +63,17 @@ body {
 .details-title {
   text-transform: uppercase;
   font-size: 16px;
+  margin-bottom: 12px;
+  margin-top: 16px;
 }
 
 .details-list {
   list-style: square;
+  margin-left: 22px;
+}
+
+.details-list li {
+  margin-bottom: 10px;
 }
 
 /* BUTTON */
@@ -54,7 +82,12 @@ body {
   background-color: black;
   color: white;
   text-transform: uppercase;
+  font-size: 18px;
   cursor: pointer;
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-top: 4px solid black;
 }
 
 .btn-add-cart:hover {
