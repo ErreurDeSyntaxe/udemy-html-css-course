@@ -41,10 +41,17 @@ body {
   margin-bottom: 12px;
 }
 
-/* This doesn't work, but adding 16px margin-top to the element below works */
-/* Can't add margin to small elements like anchors */
-/* With in-line elements, padding and margin are applied HORIZONTALLY ONLY */
+/* 
+This doesn't work, but adding 16px margin-top to the element below works
+Can't add margin to small elements like anchors
+With in-line elements, padding and margin are applied HORIZONTALLY ONLY
+inline elements take up only the space they need
+block elements apply the box model horizontally and vertically
+inline-block elements take only the space they need and apply vertically 
+by using display: inline-block, we can add margin-top to inline elements
+*/
 .more-info {
+  display: inline-block;
   margin-bottom: 16px;
 }
 
@@ -64,7 +71,7 @@ body {
   text-transform: uppercase;
   font-size: 16px;
   margin-bottom: 12px;
-  margin-top: 16px;
+  /* margin-top: 16px; */
 }
 
 .details-list {
