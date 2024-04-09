@@ -15,6 +15,18 @@ body {
   border: 4px solid black;
   width: 825px;
   margin: 50px auto;
+  position: relative;
+}
+
+.product::after {
+  content: 'SALE';
+  letter-spacing: 3px;
+  position: absolute;
+  top: -20px;
+  left: -40px;
+  background-color: red;
+  color: white;
+  padding: 5px 10px;
 }
 
 .product-title {
@@ -52,7 +64,7 @@ by using display: inline-block, we can add margin-top to inline elements
 */
 .more-info {
   display: inline-block;
-  margin-bottom: 16px;
+  margin-bottom: 30px;
 }
 
 .more-info:link,
@@ -65,6 +77,40 @@ by using display: inline-block, we can add margin-top to inline elements
   text-decoration: none;
 }
 
+.colors {
+  margin-bottom: 30px;
+}
+
+.color {
+  width: 25px;
+  height: 25px;
+  display: inline-block;
+  margin-right: 8px;
+}
+
+.color:last-child {
+  margin-right: 0;
+}
+
+.color-blue {
+  background-color: #2f6ee2;
+}
+.color-red {
+  background-color: #ec2f2f;
+}
+.color-brown {
+  background-color: #885214;
+}
+.color-black {
+  background-color: #000;
+}
+.color-green {
+  background-color: #90cc20;
+}
+.color-yellow {
+  background-color: #f0bf1e;
+}
+
 /* PRODUCT DETAILS */
 
 .details-title {
@@ -72,6 +118,7 @@ by using display: inline-block, we can add margin-top to inline elements
   font-size: 16px;
   margin-bottom: 12px;
   /* margin-top: 16px; */
+  position: relative;
 }
 
 .details-list {
