@@ -18,10 +18,24 @@
         padding: 0;
       }
 
+      .el {
+        /* DEFAULT VALUES 
+        flex-grow: 0;
+        flex-shrink: 1;
+        flex-basis: auto; */
+        /* flex-grow: 1; distributes the leftover space */
+        /* flex-basis: 200px; recommendation to the browser */
+        /* flex-shrink: 0; Will disallow shrinking */
+        /* By default, flexbox is allowed to shrink items to fit */
+        flex: 1; /* 1 1 0*/
+      }
+
       .el--1 {
         background-color: blueviolet;
+        flex-grow: 1;
       }
       .el--2 {
+        flex-grow: 2; 
         background-color: orangered;
       }
       .el--3 {
@@ -53,8 +67,25 @@
 
         /* FLEXBOX */
         display: flex;
+        gap: 20px;
         align-items: center;
-        justify-content: space-evenly;
+        justify-content: flex-start;
+      }
+
+      .el--1 {
+        align-self: flex-start;
+      }
+      .el--5 {
+        align-self: stretch; /* default value */
+      }
+      .el--6 {
+        order: -1;
+      }
+      .el--3 {
+        order: 1;
+      }
+      .el--1 {
+        order: 2;
       }
     </style>
   </head>
