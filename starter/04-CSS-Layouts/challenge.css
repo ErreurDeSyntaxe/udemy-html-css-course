@@ -1,0 +1,150 @@
+* {
+  /* This is called a global reset */
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: sans-serif;
+  line-height: 1.5;
+}
+
+/* PRODUCT */
+
+.product {
+  border: 4px solid black;
+  width: 825px;
+  margin: 50px auto;
+  position: relative;
+}
+
+.product::after {
+  content: 'SALE';
+  letter-spacing: 3px;
+  position: absolute;
+  top: -20px;
+  left: -40px;
+  background-color: red;
+  color: white;
+  padding: 5px 10px;
+}
+
+.product-title {
+  text-transform: uppercase;
+  background-color: #f7f7f7f7;
+  text-align: center;
+  font-size: 22px;
+  padding: 12px;
+}
+
+.price {
+  color: #444;
+  font-size: larger;
+}
+
+.shipping {
+  text-transform: uppercase;
+  color: #828282;
+  font-size: smaller;
+  margin-bottom: 20px;
+}
+
+.descrition {
+  margin-bottom: 12px;
+}
+
+/* 
+This doesn't work, but adding 16px margin-top to the element below works
+Can't add margin to small elements like anchors
+With in-line elements, padding and margin are applied HORIZONTALLY ONLY
+inline elements take up only the space they need
+block elements apply the box model horizontally and vertically
+inline-block elements take only the space they need and apply vertically 
+by using display: inline-block, we can add margin-top to inline elements
+*/
+.more-info {
+  display: inline-block;
+  margin-bottom: 30px;
+}
+
+.more-info:link,
+.more-info:visited {
+  color: black;
+}
+
+.more-info:hover,
+.more-info:active {
+  text-decoration: none;
+}
+
+.colors {
+  margin-bottom: 30px;
+}
+
+.color {
+  width: 25px;
+  height: 25px;
+  display: inline-block;
+  margin-right: 8px;
+}
+
+.color:last-child {
+  margin-right: 0;
+}
+
+.color-blue {
+  background-color: #2f6ee2;
+}
+.color-red {
+  background-color: #ec2f2f;
+}
+.color-brown {
+  background-color: #885214;
+}
+.color-black {
+  background-color: #000;
+}
+.color-green {
+  background-color: #90cc20;
+}
+.color-yellow {
+  background-color: #f0bf1e;
+}
+
+/* PRODUCT DETAILS */
+
+.details-title {
+  text-transform: uppercase;
+  font-size: 16px;
+  margin-bottom: 12px;
+  /* margin-top: 16px; */
+  position: relative;
+}
+
+.details-list {
+  list-style: square;
+  margin-left: 22px;
+}
+
+.details-list li {
+  margin-bottom: 10px;
+}
+
+/* BUTTON */
+
+.btn-add-cart {
+  background-color: black;
+  color: white;
+  text-transform: uppercase;
+  font-size: 18px;
+  cursor: pointer;
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-top: 4px solid black;
+}
+
+.btn-add-cart:hover {
+  background-color: white;
+  color: black;
+}
