@@ -268,9 +268,8 @@ nav p {
 /************************* FLOATS *************************/
 /************************* FLOATS *************************/
 /************************* FLOATS *************************/
-.author-img {
+/* .author-img {
   float: left;
-  /* Taken out of the page flow. Other elems flow around it */
   margin-bottom: 20px;
 }
 
@@ -310,4 +309,4 @@ aside {
 
 footer {
   clear: both;
-}
+} */
