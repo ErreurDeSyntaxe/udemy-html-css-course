@@ -1,5 +1,6 @@
 * {
   /* This is called a global reset */
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
@@ -147,4 +148,53 @@ by using display: inline-block, we can add margin-top to inline elements
 .btn-add-cart:hover {
   background-color: white;
   color: black;
+}
+
+/* FLOAT SOLUTION TO LAYOUT CHALLENGE */
+.product-img {
+  float: left;
+  margin-right: 40px;
+}
+
+.product-info {
+  width: calc(calc(825px - 8px - 250px - 80px) / 2);
+  float: left;
+  margin-right: 40px;
+  margin-top: 20px;
+}
+
+.product-details {
+  width: calc(calc(825px - 8px - 250px - 80px) / 2);
+  float: left;
+  margin-top: 20px;
+}
+
+.price {
+  float: left;
+}
+
+.shipping {
+  float: right;
+  margin-top: 5px;
+}
+
+.description {
+  clear: both;
+  margin-bottom: 10px;
+}
+
+.colors {
+  margin-bottom: 0;
+}
+
+/* This div has no height because all children are floated. It collapsed. */
+.container {
+  background-color: lightgray;
+}
+
+/* So we add a clearfix hack to the .container div */
+.clearfix::after {
+  content: '';
+  display: block;
+  clear: both;
 }
