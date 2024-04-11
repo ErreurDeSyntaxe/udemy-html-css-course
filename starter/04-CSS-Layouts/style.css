@@ -147,13 +147,13 @@ li:first-child {
   font-weight: bold;
 }
 
-li:last-child {
+/* li:last-child {
   font-style: italic;
 }
 
-li:nth-child(even) {
-  /* color: red; */
-}
+li:nth-child(even) { */
+/* color: red; */
+/* } */
 
 /* Misconception: this won't work! */
 article p:first-child {
@@ -196,7 +196,7 @@ nav a:link {
   display: block; */
 
   margin-right: 30px;
-  margin-top: 10px;
+  /* margin-top: 10px; */
   display: inline-block;
 }
 
@@ -310,3 +310,65 @@ aside {
 footer {
   clear: both;
 } */
+
+/************************* FLEXBOX *************************/
+/************************* FLEXBOX *************************/
+/************************* FLEXBOX *************************/
+
+.main-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.author-box {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.author {
+  margin: 0;
+}
+
+.related-post {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 30px;
+}
+
+.related-link:link {
+  font-size: 17px;
+  font-weight: bold;
+  font-style: normal;
+  margin-bottom: 5px;
+  display: block;
+}
+
+.related-author {
+  margin-bottom: 0;
+  font-size: 14px;
+  font-weight: normal;
+  font-style: italic;
+}
+
+main {
+  display: flex;
+  gap: 75px;
+  align-items: flex-start;
+  margin-bottom: 60px;
+}
+
+aside {
+  flex: 0 0 300px;
+}
+article {
+  flex: 1;
+  margin-bottom: 0;
+}
+
+/************************* CSS GRID *************************/
+/************************* CSS GRID *************************/
+/************************* CSS GRID *************************/
