@@ -14,7 +14,7 @@
   position: relative;
 }
 
-/* SALE BANNER */
+/* PSEUDO ELEMENT: SALE BANNER */
 .product-title::after {
   content: 'sale';
   text-transform: uppercase;
