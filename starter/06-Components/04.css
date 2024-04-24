@@ -25,4 +25,61 @@ body {
   font-family: 'Inter', sans-serif;
   color: #343a40;
   line-height: 1;
+
+  display: flex;
+  justify-content: center;
 }
+
+.pagination {
+  width: 400px;
+  margin-top: 200px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.btn {
+  background-color: #fff;
+  border: 2px solid #087f5b;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.btn-right {
+  order: 1;
+}
+.btn-icon {
+  stroke: #087f5b;
+  width: 24px;
+  height: 24px;
+}
+
+.number {
+  color: #087f5b;
+  text-decoration: none;
+  border-radius: 50%;
+  font-size: 18px;
+  width: 32px;
+  height: 32px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.number:hover,
+.btn:hover,
+.btn-icon:hover {
+  background-color: #087f5b;
+  stroke: #fff;
+  color: #fff;
+}
+/* small problem: cursor can hover over button w/o hovering over
+the icon. Then, the background color and the icon color are the same.
+The icon is invisible. */
