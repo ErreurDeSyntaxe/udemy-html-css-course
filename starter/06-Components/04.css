@@ -51,6 +51,13 @@ body {
   align-items: center;
   cursor: pointer;
 }
+.btn:hover {
+  background-color: #087f5b;
+}
+.btn:hover .btn-icon {
+  stroke: #fff;
+}
+
 .btn-right {
   order: 1;
 }
@@ -60,7 +67,8 @@ body {
   height: 24px;
 }
 
-.number {
+.number:link,
+.number:visited {
   color: #087f5b;
   text-decoration: none;
   border-radius: 50%;
@@ -72,14 +80,8 @@ body {
   justify-content: center;
   align-items: center;
 }
-
 .number:hover,
-.btn:hover,
-.btn-icon:hover {
+.number:active {
   background-color: #087f5b;
-  stroke: #fff;
   color: #fff;
 }
-/* small problem: cursor can hover over button w/o hovering over
-the icon. Then, the background color and the icon color are the same.
-The icon is invisible. */
