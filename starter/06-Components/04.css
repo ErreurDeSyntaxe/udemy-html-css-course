@@ -31,12 +31,12 @@ body {
 }
 
 .pagination {
-  width: 400px;
   margin-top: 200px;
 
   display: flex;
   justify-content: space-between;
   align-items: center;
+  gap: 12px;
 }
 
 .btn {
