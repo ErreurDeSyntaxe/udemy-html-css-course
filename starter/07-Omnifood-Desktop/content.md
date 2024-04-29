@@ -126,3 +126,38 @@ Careers
 Recipe directory
 Help center
 Privacy & terms
+
+######
+
+## Project Definition
+
+- Who?
+  - A client called Omnifood
+- What?
+  - Selling monthly food subscription
+  - Eating well effortlessly
+- Target Audience
+  - High income earners
+  - Tech enthusiasts
+  - Health-minded
+
+## Project Planning
+
+- Content
+  - Provided by client
+- Sitemap
+  - Not needed
+- Personality
+  - Startup with health/clam
+
+## Sections
+
+- Logo & Navigation
+- Hero
+- Featured In
+- How It Works
+- Means & Diets
+- Testimonials & Gallery
+- Pricing & Features
+- CTA
+- Footer
