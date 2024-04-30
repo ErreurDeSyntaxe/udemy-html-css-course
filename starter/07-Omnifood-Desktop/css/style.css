@@ -32,6 +32,8 @@ Unsplash (source)
 
 +++ 5. SHADOWS
 
+Inner Border: box-shadow: inset 0 0 0 3px #fff;
+
 +++ 6. BORDER RADIUS
 
 Default: 9px;
@@ -69,6 +71,24 @@ body {
 /* *************************** */
 /* GENERAL REUSABLE COMPONENTS */
 /* *************************** */
+.container {
+  max-width: 120rem;
+  margin: 0 auto;
+  padding: 0 3.2rem;
+}
+.grid {
+  display: grid;
+  gap: 9.6rem;
+}
+.grid--2-cols {
+  grid-template-columns: repeat(2, 1fr);
+}
+.grid--3-cols {
+  grid-template-columns: repeat(3, 1fr);
+}
+.grid--4-cols {
+  grid-template-columns: repeat(4, 1fr);
+}
 .heading-primary {
   font-size: 5.2rem;
   font-weight: 700;
@@ -215,4 +235,12 @@ body {
 .delivered-text span {
   color: #b8651b;
   font-weight: 700;
+}
+
+/* ******************** */
+/* HOW IT WORKS STYLING */
+/* ******************** */
+.section-how {
+  padding: 9.6rem 0;
+  background-color: orangered;
 }
