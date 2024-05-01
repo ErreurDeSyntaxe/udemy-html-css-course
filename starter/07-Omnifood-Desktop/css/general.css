@@ -42,6 +42,7 @@ Inner Border: box-shadow: inset 0 0 0 3px #fff;
 +++ 6. BORDER RADIUS
 
 Default: 9px;
+Cards: 11px;
 
 +++ 7. WHITESPACE
 
@@ -141,8 +142,8 @@ body {
   text-decoration: none;
 
   /* transition property declared on original 'state' */
-  /* transition: all 400ms; */
-  transition: background-color 300ms;
+  transition: all 300ms;
+  /* transition: background-color 300ms; */
 }
 .btn--full:link,
 .btn--full:visited {
@@ -164,6 +165,31 @@ body {
   /* Trick to apply border inside button */
   box-shadow: inset 0 0 0 3px #fff;
 }
+.link:link,
+.link:visited {
+  display: inline-block;
+  color: #e67e22;
+  text-decoration: none;
+  border-bottom: 1px solid currentColor;
+  padding-bottom: 2px;
+  transition: all 250ms;
+}
+.link:hover,
+.link:active {
+  color: #cf711f;
+  border-bottom: 1px solid transparent;
+}
+
+/* HELPER CLASSES */
 .margin-right-sm {
   margin-right: 1.6rem !important;
+}
+.margin-bottom-md {
+  margin-bottom: 4.8rem !important;
+}
+.center-text {
+  text-align: center;
+}
+strong {
+  font-weight: 500;
 }
