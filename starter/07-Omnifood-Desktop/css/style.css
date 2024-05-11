@@ -19,7 +19,6 @@
   display: flex;
   gap: 2.4rem;
 }
-
 .nav-link:hover,
 .nav-link:active {
   color: #cf711f;
@@ -195,6 +194,117 @@ html doesn't allow imgs to have children */
 .step-img-box:nth-child(4) {
   grid-column: 1;
   grid-row: 2;
+}
+
+/* ************* */
+/* MEALS STYLING */
+/* ************* */
+.section-meals {
+  padding: 9.6rem 0;
+}
+.meals-card {
+  border-radius: 11px;
+  overflow: hidden;
+  box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.075);
+}
+.meal {
+  transition: all 300ms;
+}
+.meal:hover {
+  transform: translateY(-1.2rem);
+  box-shadow: 0 3.2rem 6.4rem rgba(0, 0, 0, 0.05);
+}
+.meal-img {
+  width: 100%;
+}
+.meal-text {
+  padding: 4.8rem;
+  padding-top: 3.2rem;
+}
+.meal-tag {
+  display: inline-block;
+
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  padding: 0.4rem 0.8rem;
+  border-radius: 150px;
+  color: #333;
+}
+.meal-tag:not(:last-of-type) {
+  margin-right: 0.4rem;
+}
+.tag-vegetarian {
+  background-color: #51cc66;
+}
+.tag-vegan {
+  background-color: #40c057;
+}
+.tag-spicy {
+  background-color: #c92a2a;
+  color: #fff;
+}
+.meal-title {
+  font-size: 2.4rem;
+  color: #333;
+  font-weight: 600;
+  margin-bottom: 3.2rem;
+}
+.meal-facts {
+  list-style: none;
+
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+}
+.meal-fact {
+  font-size: 1.6rem;
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+}
+.meal-icon {
+  width: 2.4rem;
+  height: 2.4rem;
+  color: #e67e22;
+}
+.calories {
+  font-weight: 500;
+}
+.diets {
+  padding: 1.8rem;
+}
+.diets-title {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+.diet-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+.diet-list-item {
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+  font-size: 1.8rem;
+}
+.diet-list-icon {
+  width: 2.4rem;
+  height: 2.4rem;
+  color: #e67e22;
+}
+.more-recipes {
+  text-align: center;
+  font-size: 1.8rem;
+}
+.link:link,
+.link:visited {
+}
+.link:hover,
+.link:active {
 }
 /* Font Sizes (px)
 10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98 */
