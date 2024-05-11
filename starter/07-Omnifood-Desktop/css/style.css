@@ -19,41 +19,16 @@
   display: flex;
   gap: 2.4rem;
 }
-.btn:link,
-.btn:visited {
-  text-decoration: none;
-  color: #333;
-  font-size: 1.8rem;
-  font-weight: 600;
-  border-radius: 9px;
 
-  display: inline-block;
-  padding: 1.2rem 0;
-
-  transition: all 300ms;
-}
 .nav-link:hover,
 .nav-link:active {
   color: #cf711f;
-}
-.btn--cta:link,
-.btn--cta:visited {
-  color: #fff;
-  padding: 1.2rem 2.4rem;
-  background-color: #e67e22;
-}
-.btn--cta:hover,
-.btn--cta:active {
-  background-color: #cf711f;
 }
 
 /* ************ */
 /* HERO STYLING */
 /* ************ */
 .hero {
-  background-color: #fdf2e9;
-}
-.section-hero {
   /* padding: 4.8rem 12.8rem; */
   width: 130rem;
   margin: 0 auto;
@@ -65,15 +40,12 @@
   align-items: center;
   padding: 0 3.2rem;
 }
+.section-hero {
+  background-color: #fdf2e9;
+  padding: 9.6rem 0;
+}
 .hero-text-box {
   /* padding: 4.8rem; */
-}
-.heading-primary {
-  font-size: 5.2rem;
-  line-height: 1.05;
-  color: #333;
-  margin-bottom: 3.2rem;
-  letter-spacing: -0.5px;
 }
 .hero-text {
   font-size: 2rem;
@@ -129,6 +101,76 @@
 .hero-img {
   display: block;
   width: 100%;
+}
+
+/* ******************** */
+/* HOW IT WORKS STYLING */
+/* ******************** */
+.section-how {
+  padding: 9.6rem 0;
+}
+.steps {
+}
+.step-text-box {
+  display: grid;
+  align-content: center;
+}
+.step-number {
+  font-size: 9.8rem;
+  font-weight: 600;
+  color: #ddd;
+  margin-bottom: 1.2rem;
+}
+.step-description {
+  font-size: 1.8rem;
+  line-height: 1.8;
+  color: #444;
+}
+.step-img-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  position: relative;
+}
+.step-img-box:before,
+.step-img-box:after {
+  content: '';
+  display: block;
+  border-radius: 50%;
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.step-img-box:before {
+  width: 60%;
+  padding-bottom: 60%;
+  background-color: #fdf2e9;
+
+  z-index: -2;
+}
+.step-img-box:after {
+  width: 50%;
+  padding-bottom: 50%;
+  background-color: #fae5d3;
+
+  z-index: -1;
+}
+/* :before doesn't work on images because
+html doesn't allow imgs to have children */
+.step-img {
+  max-width: 35%;
+  display: block;
+}
+.step-text-box:nth-child(3) {
+  grid-column: 2;
+  grid-row: 2;
+}
+.step-img-box:nth-child(4) {
+  grid-column: 1;
+  grid-row: 2;
 }
 /* Font Sizes (px)
 10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98 */
