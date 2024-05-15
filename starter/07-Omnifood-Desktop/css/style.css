@@ -565,7 +565,7 @@ html doesn't allow imgs to have children */
 }
 .form-img {
   width: 100%;
-  /* transform: scale(1.35); */
+  transform: scale(1.35);
   filter: opacity(75%);
 }
 /* Font Sizes (px)
