@@ -182,11 +182,24 @@
             </div>
           </div>
           <div class="hero-img-box">
-            <img
-              src="img/hero.png"
-              class="hero-img"
-              alt="Woman enjoying food, meals in storage container, and food bowls on a table"
-            />
+            <picture>
+              <!-- browser chooses the image it can display best -->
+              <source
+                srcset="img/hero.webp"
+                type="image/webp"
+              />
+              <source
+                srcset="img/hero.webp"
+                type="image/png"
+              />
+
+              <!-- fallback img -->
+              <img
+                src="img/hero.png"
+                class="hero-img"
+                alt="Woman enjoying food, meals in storage container, and food bowls on a table"
+              />
+            </picture>
           </div>
         </div>
       </section>
